@@ -38,6 +38,8 @@ You can replace QBtn and the QPopover content with any DOM elements or component
 
 The idea is to place QTooltip inside your DOM element / component (as **direct child in DOM hierarchy**), when you want it to be the trigger for the QTooltip. Don't worry about QTooltip content inheriting CSS from the container. This won't occur, since QTooltip will be injected as a direct child of `<body>`.
 
+The tooltip takes the shape of its wrapped content. To set the max-width of the tooltip popover simply place your QTooltip content inside a <div> which has max-width CSS prop set.
+
 ## Toggle through v-model
 ``` html
 <template>
